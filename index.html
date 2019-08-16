@@ -4,251 +4,530 @@
 <head>
     <meta charset="utf-8">
     <title>Bernal Rojas</title>
-    <link href="style.css" rel="stylesheet">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700" rel="stylesheet">
+    <!-- Main CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
-    <section id="home">
-        <!-- Menu -->
-        <nav>
-            <div>
-                <a href="index.html"><img src="img/bernal.jpg" width="50%" height="50%"></a>
+
+    <aside class="menu" id="menu">
+
+        <nav class="navbar-default">
+            <div class="foto">
+                <a href="#home"><img src="img/bernal.jpg" width="200px" height="200px"></a>
             </div>
-            <ul style="color: aliceblue">
-                <li><a style="color: aliceblue" href="#">Home</a></li>
-                <li><a style="color: aliceblue" href=" #about-me ">About me</a></li>
-                <li><a style="color: aliceblue" href="#skills ">Skills</a></li>
-                <li><a style="color: aliceblue" href="#experience ">Experience</a></li>
-                <li><a style="color: aliceblue" href="#education ">Education</a></li>
-                <li> <a style="color: aliceblue" href="#portfolio ">Portfolio</a></li>
-                <li><a style="color: aliceblue" href="#blog ">Blog</a></li>
-                <li><a style="color: aliceblue" href="#contact ">Contact</a></li>
-            </ul>
+
+            <div id="navbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about-me">About me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </nav>
+    </aside>
 
-        <article>
-            <h1>Soy Bernal </h1>
-            <p>Y trabajo con ... |</p>
-        </article>
-    </section>
+    <div class="content-wrapper">
+        <div class="content-inner">
 
-    <hr>
+            <!-- Home -->
+            <section class="content" id="home">
+                <h1>
+                    ¡Hola soy <span style="color: #1cb9c8">Bernal</span>!
+                </h1>
 
-    <section id="about-me">
-        <h1>About me</h1>
+                <h3>Trabajo con <span class="palabra" id="palabra"></span></h3>
 
-        <!-- Tajeta 1 -->
-        <div class="info">
-            <ul>
-                <li><span>Nombre:</span> <span class="info">Bernal Rojas</span></li>
-                <li><span>Nacionalidad:</span> <span class="info">Costa Rica</span></li>
-                <li><span>Telefono:</span> <span class="info">(+506) 86343697</span></li>
-                <li><span>Email:</span> <span class="info"><a href="mailto:berrojas45@gmail.com">berrojas45@gmail.com</a></span></li>
-            </ul>
-        </div>
+            </section>
 
-        <!-- Tajeta 2 -->
-        <div class="info">
-            <h2>Perfil Profesional</h2>
-            <p style="text-align: justify">Soy técnico en electrónica y desarrollador de software y hardware desde hace 4 años, con énfasis en el desarrollo con microcontroladores, protocolos inalámbricos y robótica. También estudio en LEAD University, donde me especializo en análisis
-                usando modelos de Inteligencia Artificial. También desarrollo e investigo tecnologías como IoT (Internet de las cosas) y algoritmos de Inteligencia Artificial. Fui escogido como 1 de las 2 personas que irían al MIT (Massachussets Institute
-                of Technology) a desarrollar un dispositivo vestible que permite predecir cuando una mujer podría padecer de un ataque cardiaco para la empresa Bloomer HealthTech. También realizé una pasantía en Stugartt, Alemania en la casa matriz de
-                robótica, Fischer Technik. Fui uno 20 campeones de innovación con mención honorífica, por el MICITT en 2016. Actualmente me dedico a trabajar como desarrollador independiente y analista de datos, doy cursos de tecnología en Inventoría
-                Lead, un laboratorio de fabricación digital, donde soy maestro maker y parte de la junta directiva del mismo. Estos cursos van desde Ciencia de Datos para Lead Univeristy, hasta Iot, Robótica, microcontroladores y herramientas de fabricación
-                digital para Fundación Costa Rica para la Innovación, donde anteriormente fui desarrollador.
-            </p>
-        </div>
+            <!-- About Me -->
+            <section class="content" id="about-me">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="section-title">
+                                <h1>About Me</h1>
+                            </div>
+                        </div>
 
-        <!-- Tajeta 3 -->
-        <div class="info">
-            <h2>Intereses</h2>
-            <ul>
-                <li>Ciencia de Datos</li>
-                <li>IoT</li>
-                <li>Robotica</li>
-                <li>Deep Learning</li>
-                <li>Machine Learning</li>
-                <li>Blockchain</li>
-                <li>Cloud Computing</li>
-            </ul>
-        </div>
-    </section>
+                        <div class="col-xs-12 col-lg-6">
+                            <div class="panel-box">
+                                <h2>Informacion Basica</h2>
+                                <ul class="basic-info">
+                                    <li><span>Nombre:</span> <span class="info">Bernal Rojas</span></li>
+                                    <li><span>Nacionalidad:</span> <span class="info">Costa Rica</span></li>
+                                    <li><span>Telefono:</span> <span class="info">(+506) 86343697</span></li>
+                                    <li><span>Email:</span> <span class="info"><a href="mailto:berrojas45@gmail.com">berrojas45@gmail.com</a></span></li>
+                                </ul>
+                            </div>
+                        </div>
 
-    <hr>
+                        <div class="col-xs-12 col-lg-6">
+                            <div class="panel-box professional-profile">
+                                <h2>Perfil Profesional</h2>
+                                <p style="text-align: justify">Soy técnico en electrónica y desarrollador de software y hardware desde hace 4 años, con énfasis en el desarrollo con microcontroladores, protocolos inalámbricos y robótica. También estudio en LEAD University, donde me
+                                    especializo en análisis usando modelos de Inteligencia Artificial. También desarrollo e investigo tecnologías como IoT (Internet de las cosas) y algoritmos de Inteligencia Artificial. Fui escogido como 1 de las 2 personas
+                                    que irían al MIT (Massachussets Institute of Technology) a desarrollar un dispositivo vestible que permite predecir cuando una mujer podría padecer de un ataque cardiaco para la empresa Bloomer HealthTech. También realizé
+                                    una pasantía en Stugartt, Alemania en la casa matriz de robótica, Fischer Technik. Fui uno 20 campeones de innovación con mención honorífica, por el MICITT en 2016. Actualmente me dedico a trabajar como desarrollador
+                                    independiente y analista de datos, doy cursos de tecnología en Inventoría Lead, un laboratorio de fabricación digital, donde soy maestro maker y parte de la junta directiva del mismo. Estos cursos van desde Ciencia
+                                    de Datos para Lead Univeristy, hasta Iot, Robótica, microcontroladores y herramientas de fabricación digital para Fundación Costa Rica para la Innovación, donde anteriormente fui desarrollador.
+                                </p>
 
-    <section id="skills ">
-        <h1>Skills</h1>
-        <ul>
-            <li>Liderazgo</li>
-            <li>Inteligencia emocional</li>
-            <li>Trabajo en equipo</li>
-            <li>Negociación</li>
-        </ul>
-    </section>
+                            </div>
+                        </div>
 
-    <hr>
+                        <div class="col-xs-12">
+                            <div class="my-interests panel-box">
+                                <h2>Mis intereses</h2>
+                                <ul>
+                                    <li><span>Ciencia de Datos</span></li>
+                                    <li><span>IoT</span></li>
+                                    <li><span>Robotica</span></li>
+                                    <li><span>Machine Learning</span></li>
+                                    <li><span>Blockchain</span></li>
+                                </ul>
+                            </div>
+                        </div>
 
-    <section id="experience ">
-        <h1>Experience</h1>
-
-        <div class="info">
-            <h3>Fundación Costa Rica para la Innovación</h3>
-            <p class="info">Desarrollo e investigación <span>&bull;</span> <em class="date"> 2016 - 2017</em></p>
-            <p ALIGN="justify">En este puesto desarrollé, investigué y trabaje en proyectos diversos de la fundación relacionados a tecnología, desde IoT, Robótica, Werables, entre otros.</p>
+                    </div>
+                </div>
+            </section>
 
 
-            <p class="info"> Equipo extendido <span>&bull;</span> <em class="date"> 2018 - Actualidad</em></p>
-            <p ALIGN="justify">Refuerzo el equipo de la fundación cuando es necesario más personal para diversos tareas o eventos para empresas privadas como Hyundai, Roche, Colegios privados, etc.</p>
-        </div>
+            <!-- Skills -->
+            <section class="content" id="skills">
+                <div class="container">
+                    <div class="row">
 
-        <div class="info">
-            <h3>Inventoría Lead</h3>
-            <p class="info">Maestro Maker <span>&bull;</span> <em class="date"> 2017 - Actualidad</em></p>
-            <p ALIGN="justify">En este puesto asesoro y guío a personas que vienen buscando ayuda para desarrollar sus proyectos y negocios.</p>
+                        <div class="col-xs-12">
+                            <div class="section-title">
+                                <h1>Skills</h1>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-6">
+                            <div class="panel-box">
+                                <h2>Profressional Skills</h2>
+                                <div class="progress-block">
 
-            <p class="info">Administración <span>&bull;</span> <em class="date"> 2017 - Actualidad</em></p>
-            <p ALIGN="justify">Como parte de un proyecto del cual soy Co-Fundador, StartUp 4.0, adquirimos la administración del maker space.</p>
+                                    <div class="single-progressbar">
+                                        <div class="skill-text">
+                                            <span>Liderazgo</span>
+                                        </div>
+                                        <progress value="24" max="100"></progress>
+                                    </div>
 
-            <p class="info">Facilitador de Worshops <span>&bull;</span> <em class="date"> 2017 - Actualidad</em></p>
-            <p ALIGN="justify">Estos talleres incluyen, microcontroladores como Arduino, desarrollo de dispositivos IoT (Internet of Things), robótica, herramientas de fabricación digital como Impresión 3D, Corte Láser, etc.</p>
-        </div>
+                                    <div class="single-progressbar">
+                                        <div class="skill-text">
+                                            <span>Inteligencia emocional</span>
+                                        </div>
+                                        <progress value="24" max="100"></progress>
+                                    </div>
 
-        <div class="info">
-            <h3>Lead University</h3>
-            <p class="info">Facilitador de Worshops<span>&bull;</span> <em class="date"> 2018 - Actualidad</em></p>
-            <p ALIGN="justify">Principalmente estos Worshops son sobre Data Science, pero también ocacionalmente he impartido otros como prototipado para colegios e innovación para empresas.</p>
+                                    <div class="single-progressbar">
+                                        <div class="skill-text">
+                                            <span>Trabajo en equipo</span>
+                                        </div>
+                                        <progress value="24" max="100"></progress>
+                                    </div>
 
-            <p class="info">Expositor<span>&bull;</span> <em class="date"> 2017 - Actualidad</em></p>
-            <p ALIGN="justify">Principalmente imparto charlas sobre Data Science, dado que al ser un perfil tan nuevo, no muchas personas lo conocen. Todo esto en el marco de la carrera de Ingeniería en Ciencia de Datos de Lead Univeristy. Entre ellos, Excepcionales 2017,
-                Technology on Business 2018, y el pronto Expo IT-COMM 2018.</p>
-        </div>
+                                    <div class="single-progressbar">
+                                        <div class="skill-text">
+                                            <span>Negociación</span>
+                                        </div>
+                                        <progress value="24" max="100"></progress>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-        <div class="info">
-            <h3>Dedico Costa Rica</h3>
-            <p class="info">Director de formación<span>&bull;</span> <em class="date"> 2016 - 2016</em></p>
-            <p ALIGN="justify">En este puesto fui el encargado de asegurar que los clientes de la empresa recibieran la capacitación y entrenamiento adecuado para el equipo que adquierió.</p>
-        </div>
+                        <div class="col-xs-12 col-lg-6">
+                            <div class="panel-box">
+                                <h2>Personal Skills</h2>
+                                <div class="progress-block">
 
-        <div class="info">
-            <h3>Roinnova</h3>
-            <p class="info">Fundador<span>&bull;</span> <em class="date"> 2015 - 2016</em></p>
-            <p ALIGN="justify">Mi primer emprendimiento, estuvo respaldado por la Incubadora de empresas de la Universidad Nacional.</p>
-        </div>
+                                    <div class="single-progressbar">
+                                        <div class="skill-text">
+                                            <span>Data Science</span>
+                                        </div>
+                                        <progress value="24" max="100"></progress>
+                                    </div>
 
-        <div class="info">
-            <h3>Inpossible Labs</h3>
-            <p class="info">Co-Fundador, CTO<span>&bull;</span> <em class="date"> 2016 - 2016</em></p>
-            <p ALIGN="justify">Mi segundo emprendimiento, junto a un equipo multidisplinario, proponíamos llevar acabo proyectos financieramente no viables, con tecnología Open Source.<br/> Forbes México realizó una nota, en la que cual aparecimos.</p>
-        </div>
+                                    <div class="single-progressbar">
+                                        <div class="skill-text">
+                                            <span>Robotics</span>
+                                        </div>
+                                        <progress value="24" max="100"></progress>
+                                    </div>
 
-        <div class="info">
-            <h3>StartUp 4.0</h3>
-            <p class="info">Co-Fundador<span>&bull;</span> <em class="date"> 2017 - Actualidad</em></p>
-            <p ALIGN="justify">Lo que inició como un club Universitario, el club de innovación, ahora es un ecosistema activo de emprendimiento, innovación y cambio, desde este administramos Inventoría Lead, el principal Maker Space de Costa Rica.</p>
-        </div>
+                                    <div class="single-progressbar">
+                                        <div class="skill-text">
+                                            <span>Electronics</span>
+                                        </div>
+                                        <progress value="24" max="100"></progress>
+                                    </div>
 
-        <div class="info">
-            <h3>Social Entrepreneurship Challenge</h3>
-            <p class="info">Co-Fundador<span>&bull;</span> <em class="date"> 2017 - Actualidad</em></p>
-            <p ALIGN="justify">Una grupo de estudiantes creemos en la capacidad de los jovenes, por ello decidímos convocar talento através de una competencia nacional de emprendimiento social, con patrocinio de empresas como EY, Cuestamoras, Lead University, Fundación
-                Costa Rica para la Innovación se llevó acabo la primer edición en 2018.</p>
-        </div>
+                                    <div class="single-progressbar">
+                                        <div class="skill-text">
+                                            <span>IoT</span>
+                                        </div>
+                                        <progress value="24" max="100"></progress>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-        <div class="info">
-            <h3>Desarrollador Independiente</h3>
-            <p class="info">Desarrollador e invesigador <span>&bull;</span> <em class="date"> 2015 - Actualidad</em></p>
-            <p ALIGN="justify">Por supuesto, trabajo independientemente también, trabajo como Data Scientist, y pricipalmente como desarrollador de productos y asesor para empredimientos.</p>
-        </div>
+                    </div>
 
-    </section>
+                </div>
+            </section>
 
-    <hr>
 
-    <section id="Education ">
-        <h1>Academia</h1>
-        <div class="info">
-            <h3>Lead University</h3>
-            <p>Ingeniería en Ciencia de Datos <span>&bull;</span> Segundo año.</p>
-            <p>Especialidad Ciberseguridad <span>&bull;</span> Primer año.</p>
-        </div>
-        <div class="info">
-            <h3>CTP Mercedes Norte</h3>
-            <p> Técnico Electrónica Industrial <span>&bull;</span> Finalizado 2016.</p>
-            <p> Bachillerato Educación Media <span>&bull;</span> Finalizado 2016.</p>
-        </div>
+            <!-- Experiencia-->
+            <section class="content" id="experience">
+                <div class="container">
+                    <div class="row">
 
-        <div class="info">
-            <h3>Centro Educativo Santa Inés</h3>
-            <p> Conclusión de Estudios Generales Básicos<span>&bull;</span> Finalizado 2013.</p>
-        </div>
+                        <div class="col-xs-12">
+                            <div class="section-title">
+                                <h1>Experiencia</h1>
+                            </div>
+                        </div>
 
-    </section>
+                        <div class="col-xs-12">
+                            <ul class="timeline">
+                                <li>
+                                    <div class="timeline-panel">
+                                        <h2>Fundación Costa Rica para la Innovación</h2>
+                                        <h3>Desarrollo e investigaciónDesarrollo e investigación <span></span> <em class="fecha"> 2016 - 2017</em></h3>
+                                        <p>En este puesto desarrollé, investigué y trabaje en proyectos diversos de la fundación relacionados a tecnología, desde IoT, Robótica, Werables, entre otros.</p>
+                                    </div>
+                                </li>
 
-    <hr>
+                                <li class="timeline-derecha">
+                                    <div class="timeline-panel">
+                                        <h2>Inventoría Lead</h2>
+                                        <h3>Maestro Maker <span></span> <em class="fecha"> 2017 - Actualidad</em></h3>
+                                        <p>En este puesto asesoro y guío a personas que vienen buscando ayuda para desarrollar sus proyectos y negocios</p>
+                                    </div>
+                                </li>
 
-    <section id="Portfolio">
-        <h1>Portfolio</h1>
-        <table>
-            <tr>
-                <td style="align-content: center">
-                    <img src="img/bci.jpg" width="300px" height="300px">
-                    <h4>Clasificación de sentimientos en señales cerebrales</h4>
-                    <p style="justify">Proyecto de investigación que combina técnicas de Machine Learning para obtener los el 
-                        sentimiento de una señal encefalográfica basada en valencia y exitación.</p>
-                </td>
-                <td>
-                    <img src="img/pneumonia.jpg" width="300px" height="300px">
-                    <h4>Clasificación de pneumonía en imagenes médicas</h4>
-                    <p style="justify">Diseño de un modelo que utiliza Deep Learning para predecir la existencia de pneumonía en imagenes médicas.</p>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <img src="img/corazon.jpg"  width="300px" height="300px">
-                    <h4>Wearable para predecir ataques cardiacos</h4>
-                    <p style="justify">Como parte de una pasantía en Bloomer Healthtech en MIT fuí parte del equipo de desarrollo de un 
-                    braiser para mujer que posee un electrocardiograma embebido que permitirá monitorear la señal cardiaca y predecir alguna cardiopatía.
-                    </p>
-                </td>
-                <td>
-                    <img src="img/watson.jpg" width="300px" height="300px">
-                    <h4>Demo Watson</h4>
-                    <p Style="justify">Diseño y construcción de dispositivos que utilizaban IBM Watson para el stan de IBM en TEDx 2018.</p>
-                </td>
-            </tr>
-        </table>
+                                <li>
+                                    <div class="timeline-panel">
+                                        <h2>Lead University</h2>
+                                        <h3>Facilitador de Worshops<span></span> <em class="fecha"> 2018 - Actualidad</em></h3>
+                                        <p>Principalmente estos Worshops son sobre Data Science, pero también ocacionalmente he impartido otros como prototipado para colegios e innovación para empresas.</p>
+                                    </div>
+                                </li>
 
-    </section>
-    <hr>
+                                <li>
+                                    <div class="timeline-panel">
+                                        <h2>Social Entrepreneurship Challenge</h2>
+                                        <h3>Co-Fundador<span></span> <em class="fecha"> 2017 - Actualidad</em></h3>
+                                        <p>Una grupo de estudiantes creemos en la capacidad de los jovenes, por ello decidímos convocar talento através de una competencia nacional de emprendimiento social, con patrocinio de empresas como EY, Cuestamoras,
+                                            Lead University, Fundación Costa Rica para la Innovación se llevó acabo la primer edición en 2018.</p>
+                                    </div>
+                                </li>
 
-    <section id="blog ">
-        <h1>Blog</h1>
-        <div>
-            <h3>Disruptivo <span>&bull;</span> <a href="https://disruptivo.cr/blog/iot-la-revolucion-de-los-chunches">internet de los chunches</a></h3>
-        </div>
-    </section>
+                                <li class="timeline-derecha">
+                                    <div class="timeline-panel">
+                                        <h2>Desarrollador Independiente</h2>
+                                        <h3>Desarrollador e invesigador <span></span> <em class="fecha"> 2015 - Actualidad</em></h3>
+                                        <p>Por supuesto, trabajo independientemente también, trabajo como Data Scientist, y pricipalmente como desarrollador de productos y asesor para empredimientos.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
 
-    <hr>
+                    </div>
+                </div>
+            </section>
 
-    <section id="Contact ">
-        <h1>Contact</h1>
-        <form method="post">
-            <div>
-                <label for="contactName">Nombre</label>
-                <input type="text" value="" size="35" id="contactName" name="contactName">
 
-                <label for="contactEmail">Email</label>
-                <input type="text" value="" size="35" id="contactEmail" name="contactEmail">
+            <!-- Eeducation-->
+            <section class="content" id="education">
+                <div class="container">
+                    <div class="row">
 
-                <label for="contactSubject">Asunto</label>
-                <input type="text" value="" size="35" id="contactSubject" name="contactSubject">
-                <br>
-                <label>Mensaje</label>
-                <textarea></textarea>
+                        <div class="col-xs-12">
+                            <div class="section-title">
+                                <h1>Academia</h1>
+                            </div>
+                        </div>
 
-                <button class="submit">Enviar</button>
+                        <div class="col-xs-12">
+
+                            <ul class="timeline">
+
+                                <li>
+                                    <div class="timeline-panel">
+                                        <h2>Lead University</h2>
+                                        <h3>Ingeniería en Ciencia de Datos</h3>
+                                        <progress class="progresoAcademia" value="60" max="100"></progress>
+                                    </div>
+                                </li>
+
+                                <li class="timeline-derecha">
+                                    <div class="timeline-panel">
+                                        <h2>Lead University</h2>
+                                        <h3>Especialidad Ciberseguridad</h3>
+                                        <progress class="progresoAcademia" value="90" max="100"></progress>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="timeline-panel">
+                                        <h2>CTP Mercedes Norte</h2>
+                                        <h3>Técnico Electrónica Industrial & Bachillerato </h3>
+                                        <progress class="progresoAcademia" value="100" max="100"></progress>
+                                    </div>
+                                </li>
+
+                                <li class="timeline-derecha">
+                                    <div class="timeline-panel">
+                                        <h2>Centro Educativo Santa Inés</h2>
+                                        <h3>Educación media </h3>
+                                        <progress class="progresoAcademia" value="100" max="100"></progress>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <!--Portafolio -->
+            <section class="content" id="portfolio">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-xs-12">
+                            <div class="section-title">
+                                <h1>Portafolio</h1>
+                            </div>
+                        </div>
+
+
+                        <div class="row" id="bloque1">
+                            <div class="col-xs-12 col-md-6 ">
+                                <div class="cuadro ">
+
+                                    <div class="cuadro-foto-portafolio">
+                                        <img src="https://cdn.pixabay.com/photo/2019/08/06/22/48/artificial-intelligence-4389372_960_720.jpg">
+                                    </div>
+
+                                    <div class="cuadro-texto">
+                                        <h2>Clasificación de sentimientos en señales cerebrales</h2>
+                                        <div class="cintillo">
+                                            </p>Lead University • 2019</p>
+                                        </div>
+                                        <p>Proyecto de investigación que combina técnicas de Machine Learning para obtener los el sentimiento de una señal encefalográfica basada en valencia y exitación.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-xs-12 col-md-6 ">
+                                <div class="cuadro ">
+
+                                    <div class="cuadro-foto-portafolio">
+                                        <img src="https://www.intramed.net/UserFiles/vinetas/91311.jpg">
+                                    </div>
+
+                                    <div class="cuadro-texto">
+                                        <h2>Clasificación de pneumonía en imagenes médicas</h2>
+                                        <div class="cintillo">
+                                            </p>Kaggle • 2018</p>
+                                        </div>
+                                        <p>Diseño de un modelo que utiliza Deep Learning para predecir la existencia de pneumonía en imagenes médicas.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-12">
+                                <div class="pagination-container text-center">
+                                    <ul class="pagination">
+                                        <li>
+                                            <a onclick="paginaUno()">
+                                                <span>«</span>
+                                            </a>
+                                        </li>
+                                        <li class="active"><a onclick="paginaUno()">1</a></li>
+                                        <li><a onclick="paginaDos()">2</a></li>
+                                        <li>
+                                            <a onclick="paginaDos()">
+                                                <span>»</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" id="bloque2" style="display: none">
+                            <div class="col-xs-12 col-md-6 ">
+                                <div class="cuadro ">
+
+                                    <div class="cuadro-foto-portafolio">
+                                        <img src="https://www.topdoctors.es/files/Image/large/599d8821-4e3c-4eb3-96bf-19538ac97da0.jpg">
+                                    </div>
+
+                                    <div class="cuadro-texto">
+                                        <h2>Wearable para predecir ataques cardiacos</h2>
+                                        <div class="cintillo">
+                                            </p>MIT | Bloomer Healthech• 2017</p>
+                                        </div>
+                                        <p>Como parte de una pasantía en Bloomer Healthtech en MIT fuí parte del equipo de desarrollo de un braiser para mujer que posee un electrocardiograma embebido que permitirá monitorear la señal cardiaca y predecir
+                                            alguna cardiopatía.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-xs-12 col-md-6 ">
+                                <div class="cuadro ">
+
+                                    <div class="cuadro-foto-portafolio">
+                                        <img src="https://tecreview.tec.mx/wp-content/uploads/2015/11/maxresdefault-2.jpg">
+                                    </div>
+
+                                    <div class="cuadro-texto">
+                                        <h2>Demo Watson</h2>
+                                        </br>
+                                        <div class="cintillo">
+                                            </p>TEDx • 2018</p>
+                                        </div>
+                                        <p>Diseño y construcción de dispositivos que utilizaban IBM Watson para el stan de IBM en TEDx 2018.</p>
+                                        </br>
+                                        </br>
+                                        </br>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-xs-12">
+                                <div class="pagination-container text-center">
+                                    <ul class="pagination">
+                                        <li>
+                                            <a onclick="paginaUno()">
+                                                <span>«</span>
+                                            </a>
+                                        </li>
+                                        <li><a onclick="paginaUno()">1</a></li>
+                                        <li class="active"><a onclick="paginaDos()">2</a></li>
+                                        <li>
+                                            <a onclick="paginaDos()">
+                                                <span>»</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+            </section>
+
+
+            <!--Blog-->
+            <section class="content" id="blog">
+                <div class="container">
+                    <div class="row ">
+
+                        <div class="col-xs-12 ">
+                            <div class="section-title ">
+                                <h1>Blog</h1>
+                            </div>
+                        </div>
+
+                        <div class="row ">
+                            <div class="col-xs-12 col-md-6 ">
+                                <div class="cuadro ">
+
+                                    <div class="cuadro-foto ">
+                                        <a href="https://disruptivo.cr/blog/iot-la-revolucion-de-los-chunches ">
+                                            <img src="https://disruptivo.cr/wp-content/uploads/2018/07/Internas_horizontal_IoT-2.png ">
+                                        </a>
+                                    </div>
+
+                                    <div class="cuadro-texto ">
+                                        <h2>Internet de los chunches</h2>
+                                        <div class="cintillo">
+                                            </p>Disruptivo • 6/Julio/2018</p>
+                                        </div>
+                                        <p>El IoT no se trata solamente de la conexión en sí misma de los objetos o aparatos domésticos que rodean a la Internet, sino también de la manera en que se recoge información del medio externo...
+                                            <a href="https://disruptivo.cr/blog/iot-la-revolucion-de-los-chunches " style="padding: 5px ">  Seguir leyendo </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!--Contact-->
+            <section class="content" id="contact">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-xs-12">
+                            <div class="section-title ">
+                                <h1>Contact Me</h1>
+                            </div>
+                        </div>
+
+                        <form id="contactForm" class="contact-form" method="POST" action="php/contacto.php">
+                            <div class="row">
+
+                                <div class="col-sm-12 col-sm-6 ">
+                                    <input type="text " class="form-control" placeholder="Nombre" name="name">
+                                </div>
+
+                                <div class="col-sm-12 col-sm-6 ">
+                                    <input placeholder="Email " class="form-control" type="text" name="email">
+                                </div>
+                            </div>
+
+                            <br>
+                            <textarea placeholder="Mensaje" class="form-control" name="message"></textarea>
+                            <br>
+
+                            <button class="btn">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
             </div>
-        </form>
-    </section>
-
+        </div>
 </body>
+
+<script src="js/jquery.js " type="text/javascript "></script>
+<script type="text/javascript " src="js/jquery.easing.1.3.js "></script>
+<script src="js/script.js " type="text/javascript "></script>
+
+</html>
