@@ -383,8 +383,37 @@
     }
     
     .btn:hover {
-        background-color: rgb(45, 122, 185);
+        background-color: #1cb9c8;
         color: #fff;
+    }
+    
+    .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        background-color: transparent;
+    }
+    
+    .fa:hover {
+        color: #1cb9c8;
+    }
+    
+    .fa-facebook {
+        color: #335AA6;
+        padding-left: 160px;
+    }
+    
+    .fa-linkedin {
+        color: #335AA6;
+        padding-left: 200px;
+    }
+    
+    .fa-instagram {
+        color: #F25835;
+        padding-left: 200px;
     }
     /* ============================= blog  =============================*/
     
